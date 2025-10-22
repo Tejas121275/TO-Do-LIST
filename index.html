@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <div class="heading">
+                <p class="heading-innerp">
+                    TO DO LIST
+                </p>
+            </div>
+            <div class="bottom">
+                <form action="#" class="bottom-form">
+                    <input type="text" class="bottom-form-box" placeholder="Title">
+                    <button type="button" class="bottom-form-button" onclick="newListItem()">ADD</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="list">
+        <ul class="parent-list">
+            <li class="parent-list-li" onclick="omit(event)">
+                <p class="parent-list-li-p">Gym</p>
+                <button class="parent-list-li-button" onclick="removal(event)">x</button>
+                <button class="parent-list-li-button2" onclick="swapbox(event)">Swap</button>
+            </li>
+            <li class="parent-list-li" onclick="omit(event)">
+                <p class="parent-list-li-p">Sleep</p>
+                <button class="parent-list-li-button" onclick="removal(event)">x</button>
+                <button class="parent-list-li-button2" onclick="swapbox(event)">Swap</button>
+            </li>
+            <li class="parent-list-li" onclick="omit(event)">
+                <p class="parent-list-li-p">Reading</p>
+                <button class="parent-list-li-button" onclick="removal(event)">x</button>
+                <button class="parent-list-li-button2" onclick="swapbox(event)" >Swap</button>
+            </li>
+            <li class="parent-list-li" onclick="omit(event)">
+                <p class="parent-list-li-p">Study</p>
+                <button class="parent-list-li-button" onclick="removal(event)">x</button>
+                <button class="parent-list-li-button2" onclick="swapbox(event)">Swap</button>
+            </li>
+        </ul>
+    </section>
+    <div class="alertbox">
+        <h1 class="alertbox-h1">SWAP WITH</h1>
+        <input type="text" class="alertbox-box" placeholder="Enter Number"><br>
+        <span class="alertbox-span">
+            <button class="alertbox-button2" onclick="swapbox()">Cancle</button>
+            <button class="alertbox-button" onclick="swapper(event)">OK</button>
+        </span>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
