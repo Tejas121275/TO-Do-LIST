@@ -21,7 +21,3 @@ This project helps manage daily tasks efficiently with features like adding, che
 - **JavaScript (ES6)** – For interactivity and DOM manipulation  
 
 ---
-
-## 📸 Preview
-
-*(You can add a screenshot here later)*  
